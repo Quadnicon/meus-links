@@ -1,0 +1,119 @@
+/* Fundo geral */
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-image: url("https://i.redd.it/vfj65y1spo2b1.jpg");
+    background-size: cover;
+    color: rgb(235, 235, 235);
+    animation: fadeIn 1s ease-in-out;
+    backdrop-filter: blur(1,3px)
+}
+
+/* Animação inicial */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #4ee1fb;
+    text-shadow: 0 0 10px #0073ff;
+    animation: slideDown 1s ease;
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-40px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Menu */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+    backdrop-filter: blur(10px);
+    background: rgba(0,0,0,0.4);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: rgba(255,255,255,0.2);
+    transform: scale(1.1);
+}
+
+/* Caixa principal */
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 40px;
+    background: rgba(212, 212, 212, 0.15);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    animation: fadeUp 1s ease;
+}
+
+@keyframes fadeUp {
+    from { transform: translateY(40px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Títulos */
+h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Cards de projetos */
+.card {
+    background: rgba(255,255,255,0.2);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background: rgba(255,255,255,0.3);
+}
+
+.container h2 {
+    margin-top: 40px;
+    font-size: 30px;
+    text-shadow: 0 0 10px rgba(0,0,0,0.7);
+    animation: fadeUp 1s ease;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    margin-top: 10px;
+    background: rgba(255,255,255,0.25);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: 0.3s;
+    backdrop-filter: blur(5px);
+}
+
+.btn:hover {
+    background: rgba(255,255,255,0.45);
+    transform: scale(1.05);
+}
